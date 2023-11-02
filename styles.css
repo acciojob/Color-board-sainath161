@@ -2,13 +2,14 @@
     display: grid;
     grid-template-columns: repeat(25, 1fr); /* Create 20 columns */
     gap: 5px;
-    width: 400px; /* Adjust the width as needed */
+    width: 100%; /* Adjust the width as needed */
+	height: 100%
 }
 
 .square {
     width: 20px;
     height: 20px;
-    background-color: lightblue; /* Initial background color */
+    background-color: gray; /* Initial background color */
     transition: background-color 1s; /* Smooth color transition over 1 second */
     cursor: pointer;
 }
