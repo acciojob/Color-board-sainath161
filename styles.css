@@ -1,1 +1,21 @@
-/*  your css code here. If applicable */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    margin: 0;
+	background: black;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(25, 20px); /* Adjust the number of columns as needed */
+    gap: 5px; /* Adjust the gap between squares as needed */
+}
+
+.square {
+    width: 20px;
+    height: 20px;
+    background-color: #333; /* Dark gray by default */
+    transition: background-color 1s ease; /* Smooth transition on hover */
+}
