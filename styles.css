@@ -1,25 +1,18 @@
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 70vh;
-    margin: 0;
-	background:black;
-}
-
 .container {
     display: grid;
-    grid-template-columns: repeat(25, 20px);
+    grid-template-columns: repeat(25, 1fr); /* Create 20 columns */
     gap: 5px;
+    width: 400px; /* Adjust the width as needed */
 }
 
 .square {
     width: 20px;
     height: 20px;
-    background-color: lightgray;
-    transition: background-color 1s ease;
+    background-color: lightblue; /* Initial background color */
+    transition: background-color 1s; /* Smooth color transition over 1 second */
+    cursor: pointer;
 }
 
 .square:hover {
-    background-color: blue;
+    background-color: lightcoral; /* New background color on hover */
 }

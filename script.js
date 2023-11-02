@@ -1,20 +1,27 @@
-const container = document.getElementById('container');
+const container = document.querySelector('.container');
 
-// Create 800 squares
-for (let i = 0; i < 800; i++) {
-    const square = document.createElement('div');
-    square.classList.add('square');
+// Function to create a grid of boxes
+function createBoxes() {
+    for (let i = 0; i < 800; i++) {
+        const box = document.createElement('div');
+        box.className = 'square';
+        container.appendChild(box);
+    }
+}
 
+createBoxes();
+
+// Add event listeners to reset the background color after 1 second
+const squares = document.querySelectorAll('.square');
+
+squares.forEach((square) => {
     square.addEventListener('mouseover', () => {
-        square.style.backgroundColor = 'red'; // Change the background color on hover
+        square.style.backgroundColor = 'lightcoral';
     });
 
     square.addEventListener('mouseout', () => {
-        // Reset the background color after 1 second
         setTimeout(() => {
-            square.style.backgroundColor = 'blue'; // Change it back to the original color
-        }, 1000); // 1000 milliseconds = 1 second
+            square.style.backgroundColor = 'lightblue';
+        }, 1000);
     });
-
-    container.appendChild(square);
-}
+});
