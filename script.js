@@ -23,7 +23,7 @@ for (let i = 0; i < 800; i++) {
     square.addEventListener('mouseout', () => {
         // Reset the background color after 1 second
         setTimeout(() => {
-            square.style.backgroundColor = ''; // Reset to the original color (from CSS)
+            square.style.backgroundColor = '#333'; // Reset to the default dark gray color
         }, 1000); // 1000 milliseconds = 1 second
     });
 

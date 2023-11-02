@@ -9,8 +9,8 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: repeat(25, 20px); /* Adjust the number of columns as needed */
-    gap: 5px; /* Adjust the gap between squares as needed */
+    grid-template-columns: repeat(25, 20px);
+    gap: 5px;
 }
 
 .square {
