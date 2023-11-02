@@ -10,21 +10,20 @@ function getRandomColor() {
     return color;
 }
 
-// Create 800 squares with different hover colors
+// Create 800 squares with hover behavior
 for (let i = 0; i < 800; i++) {
     const square = document.createElement('div');
     square.classList.add('square');
 
     square.addEventListener('mouseover', () => {
         const randomColor = getRandomColor();
-        square.style.backgroundColor = randomColor; // Change to a random background color on hover
+        square.style.backgroundColor = randomColor;
     });
 
     square.addEventListener('mouseout', () => {
-        // Reset the background color after 1 second
         setTimeout(() => {
-            square.style.backgroundColor = '#333'; // Reset to the default dark gray color
-        }, 1000); // 1000 milliseconds = 1 second
+            square.style.backgroundColor = 'lightgray';
+        }, 1000);
     });
 
     container.appendChild(square);
