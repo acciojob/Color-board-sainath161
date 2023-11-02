@@ -2,23 +2,24 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 70vh;
     margin: 0;
+	background:black;
 }
 
 .container {
     display: grid;
-    grid-template-columns: repeat(20, 40px); /* Adjust the number of columns as needed */
-    gap: 5px; /* Adjust the gap between squares as needed */
+    grid-template-columns: repeat(25, 20px);
+    gap: 5px;
 }
 
 .square {
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 20px;
     background-color: lightgray;
-    transition: background-color 1s ease; /* Smooth transition on hover */
+    transition: background-color 1s ease;
 }
 
 .square:hover {
-    background-color: blue; /* Change the background color on hover */
+    background-color: blue;
 }
